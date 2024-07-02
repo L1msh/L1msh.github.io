@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202020;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: #202020;
+    padding-bottom: 10px; /* 헤더 아래 여백 줄임 */
+}
+
+.header-image {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 상단 정렬로 변경 */
+    padding: 0 20px 20px; /* 상단 패딩 제거, 좌우 하단 패딩 유지 */
+}
+
+.rounded-box {
+    background-color: #333;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -30px; /* 헤더와의 간격을 줄이기 위해 음수 마진 적용 */
+}
+
+.event-items-image {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.calculator {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-top: 0;
+    font-size: 24px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.6;
+    background-color: #444;
+    padding: 15px;
+    border-radius: 5px;
+}
