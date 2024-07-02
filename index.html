@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>고전장 전화 계산기</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="image/erdtyhhgt.png" alt="별의 고전장" class="header-image">
+    </header>
+    <main>
+        <div class="rounded-box">
+            <img src="image/gacha.jpg" alt="이벤트 아이템" class="event-items-image">
+            <div class="calculator">
+                <h1>고전장 박스 계산기</h1>
+                <input type="number" id="currentSenka" placeholder="현재 전화의 개수" required>
+                <input type="number" id="startBox" placeholder="시작 박스 번호" required>
+                <button onclick="calculate()">계산</button>
+                <div id="result"></div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
